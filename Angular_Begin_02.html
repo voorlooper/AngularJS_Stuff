@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- Tutorial from "AngularJS Succintly.pdf"" :: Chapter 2 -->
+<!-- https://github.com/fdietz/recipes-with-angular-js-examples -->
+<head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Learning AngularJS - Part 1</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body ng-app>
+    <div ng-controller="MyCtrl">
+        <button ng-click="incrementValue(1)">Increase by 1</button>
+        <p>{{getIncrementedValue()}}</p>
+    </div>
+</body>
+
+</html>
